@@ -1,0 +1,23 @@
+//レスポンシブ
+$breakpoints: (
+  //スマートフォン
+  "sp": "(min-width: 340px)",
+  //タブレット
+  "tab": "(min-width: 600px)",
+  //パソコン
+  "pc": "(min-width: 1025px)"
+);
+
+//pxをremへ変換
+@function rem($pixels) {
+  @return calc($pixels / 16 * 1rem);
+}
+
+//フォントサイズ
+$fs-normal: rem(16);
+$fs-small: rem(8);
+$fs-middle: rem(24);
+$fs-large: rem(32);
+
+//カラー
+$header-bg: rgb(24, 119, 242);

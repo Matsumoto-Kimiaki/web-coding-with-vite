@@ -1,0 +1,10 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.p-form {
+  width: 100%;
+  @include m.mq(tab) {
+  }
+  @include m.mq(pc) {
+  }
+}

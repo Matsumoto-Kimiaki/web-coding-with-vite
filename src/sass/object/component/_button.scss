@@ -1,0 +1,11 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.c-button {
+  border-radius: 10%;
+  @include m.mq(tab) {
+  }
+  @include m.mq(pc) {
+  }
+}
+

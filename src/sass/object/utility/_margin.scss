@@ -1,0 +1,10 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.u-margin {
+  margin-top: 10px;
+  @include m.mq(tab) {
+  }
+  @include m.mq(pc) {
+  }
+}

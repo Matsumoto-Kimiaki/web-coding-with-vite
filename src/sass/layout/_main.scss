@@ -1,0 +1,12 @@
+@use "../foundation/variable" as v;
+@use "../foundation/mixin" as m;
+
+.l-main {
+    width: 30%;
+    @include m.mq(tab) {
+        width: 50%;
+    }
+    @include m.mq(pc) {
+        width: 100%;
+    }
+}
