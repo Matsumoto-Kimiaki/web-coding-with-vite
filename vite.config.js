@@ -4,6 +4,13 @@ import sassGlobImports from "vite-plugin-sass-glob-import";
 export default defineConfig({
   root: "./src", //開発ディレクトリ設定
 
+  server: {
+
+    open: 'index.html',  //静的サイト開発時
+    // open: 'http://pondesign.local'  //wordprss開発時、LocalのSite domain部分
+
+  },
+
   build: {
     outDir: "../dist", //index.htmlからの相対パス
     emptyOutDir: true, //ビルド時の警告を防ぐ
